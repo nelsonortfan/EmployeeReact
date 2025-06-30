@@ -6,19 +6,19 @@ const EmployeeComponent = () => {
     const [lastName, setLastName] = useState('')
     const [email, setEmail] = useState('')
 
-    function handleFirstName(e){    
+    const handleFirstName = (e) => {    
         setFirstName(e.target.value);
     }
 
-    function handleLastName(e){
+    const handleLastName = (e) => {
         setLastName(e.target.value);
     }
 
-    function handleEmail(e){
+    const handleEmail = (e) => {
         setEmail(e.target.value);
     }
 
-    function saveEmployee(e){
+    const saveEmployee = (e) => {
         e.preventDefault();
         const employee = {firstName, lastName, email}
         console.log(employee)
