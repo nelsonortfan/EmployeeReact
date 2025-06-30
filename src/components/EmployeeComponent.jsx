@@ -18,10 +18,17 @@ const EmployeeComponent = () => {
         setEmail(e.target.value);
     }
 
+    function saveEmployee(e){
+        e.preventDefault();
+        const employee = {firstName, lastName, email}
+        console.log(employee)
+    }
+
   return (
     <div className='container'>
+        <br></br>
         <div className='row'>
-            <div className='card'>
+            <div className='card col-md-6 offset-md-3 offset-md-3'>
                 <h2 className='text-center'>Add Employee</h2>
                 <div className='card-body'>
                     <form>
@@ -54,7 +61,7 @@ const EmployeeComponent = () => {
                         <div className='form-group mb-2'>
                             <label className='form-label' >Email:</label>
                             <input
-                                type='password'
+                                type='text'
                                 placeholder='Enter Email'
                                 name='email'
                                 value={email}
