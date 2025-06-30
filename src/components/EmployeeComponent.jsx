@@ -54,7 +54,7 @@ const EmployeeComponent = () => {
                         <div className='form-group mb-2'>
                             <label className='form-label' >Email:</label>
                             <input
-                                type='text'
+                                type='password'
                                 placeholder='Enter Email'
                                 name='email'
                                 value={email}
@@ -63,6 +63,8 @@ const EmployeeComponent = () => {
                             >
                             </input>
                         </div>
+
+                        <button  className='btn btn-success' onClick={saveEmployee} >Submit</button>
 
                     </form>
                 </div>
