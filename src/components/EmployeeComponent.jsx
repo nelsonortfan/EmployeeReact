@@ -6,6 +6,9 @@ const EmployeeComponent = () => {
     const [lastName, setLastName] = useState('')
     const [email, setEmail] = useState('')
 
+    function handleFirstName(e){    
+        setFirstName(e.target.value);
+    }
 
   return (
     <div className='container'>
@@ -21,6 +24,8 @@ const EmployeeComponent = () => {
                                 placeholder='Enter Employee First Name'
                                 name='firstName'
                                 value={firstName}
+                                className='form-control'
+                                onChange={handleFirstName}
                             >
                             </input>
                         </div>
