@@ -10,6 +10,10 @@ const EmployeeComponent = () => {
         setFirstName(e.target.value);
     }
 
+    function handleLastName(e){
+        setLastName(e.target.value);
+    }
+
   return (
     <div className='container'>
         <div className='row'>
@@ -29,6 +33,20 @@ const EmployeeComponent = () => {
                             >
                             </input>
                         </div>
+
+                        <div className='form-group mb-2'>
+                            <label className='form-label' >Last Name:</label>
+                            <input
+                                type='text'
+                                placeholder='Enter Employee LastName'
+                                name='lastName'
+                                value={lastName}
+                                className='form-control'
+                                onChange={handleLastName}
+                            >
+                            </input>
+                        </div>
+
                     </form>
                 </div>
             </div>
